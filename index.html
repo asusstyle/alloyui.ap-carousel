@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="iso-8859-1" />
+<title>Carousel</title>
+<link href="../ap-carousel/ap-carousel-styles.css" rel="stylesheet" />
+</head>
+<body>
+<p>asdfasdfsdf</p>
+<div class="ap-carousel-wrapper">
+	<div class="carousel">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</div>
+</div>
+<script src="../build/aui/aui-min.js"></script>
+<script>
+AUI().applyConfig({
+	modules: {
+		'ap-carousel': {
+			fullpath: 'ap-carousel.js',
+			/*submodules: {
+				'ap-carousel-css': {
+					fullpath: 'ap-carousel.css',
+					type: 'css'
+				}
+			},*/
+			requires: ['aui-base','transition']
+		}
+	}
+});
+
+AUI().ready('ap-carousel', function(A) {
+	var car = new A.APCarousel({
+		contentBox: ".carousel"
+	}).render();
+});
+</script>
+</body>
+</html>

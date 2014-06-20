@@ -1,0 +1,15 @@
+#carousel { }
+.item { width:560px; min-height:350px; background-color:#f1f1f1; }
+.item.current { background-color:red; }
+
+
+/*===========style to put in ap-carousel.css=============*/
+.aui-apcarousel-content { position:relative; }
+.pull-left { float:left; }
+.pull-right { float:right; }
+.fade { position:absolute; z-index:-1; }
+.fade.current { z-index:1; }
+.ap-carousel-controls { clear:both; }
+.note { position:absolute; z-index:1; background-color:#fff; color:#f00; padding:5px; margin-top:5px; border-radius:5px; box-shadow:1px 1px 2px #999; left:36%; }
+.directional-controls li, .play-controls li, .pagination li { cursor:pointer; }
+.active { color:red; }
